@@ -27,8 +27,158 @@ I'm learning Python basics in a high school programming class. I have some exper
 # =============================================================================
 
 """
-PROBLEM 1: [Problem Title/Description]
-[Copy the complete problem description from your AI assistant]
+Problem 1: Simple Calculator (Variables and Basic Data Types)
+
+
+Description:
+Write a program that asks the user to input two numbers and then prints the sum, difference, product, and quotient.
+
+Example:
+
+Input:
+Enter first number: 8
+Enter second number: 4
+
+Output:
+Sum: 12
+Difference: 4
+Product: 32
+Quotient: 2.0
+
+
+Hint: Use input() to read numbers and float() or int() to convert them.
+
+Problem 2: Grade Checker (Conditionals)
+
+
+Description:
+Ask the user to enter a test score (0–100). Then print the letter grade according to this scale:
+
+90–100: A
+
+80–89: B
+
+70–79: C
+
+60–69: D
+
+Below 60: F
+
+Example:
+
+Input:
+Enter your score: 85
+
+Output:
+You got a B.
+
+
+Hint: Use if, elif, and else.
+
+Problem 3: Even or Odd Counter (Loops + Conditionals)
+
+
+Description:
+Write a program that asks the user to enter 5 numbers. After all numbers are entered, print how many were even and how many were odd.
+
+Example:
+
+Input:
+Enter number 1: 4
+Enter number 2: 7
+Enter number 3: 12
+Enter number 4: 3
+Enter number 5: 8
+
+Output:
+Even numbers: 3
+Odd numbers: 2
+
+
+Hint: Use a for loop and the modulus operator %.
+
+Problem 4: Password Checker (Loops + Conditionals)
+
+
+Description:
+Create a simple password checker. The correct password is "python123". Ask the user to enter a password. Keep asking until they get it right or they try 3 times.
+
+Example:
+
+Input:
+Attempt 1: java456
+Attempt 2: python
+Attempt 3: python123
+
+Output:
+Access granted.
+
+
+Or:
+
+Input:
+Attempt 1: test1
+Attempt 2: test2
+Attempt 3: test3
+
+Output:
+Access denied.
+
+
+Hint: Use a while loop with a counter.
+
+Problem 5: Function: Multiply List Elements (Functions + Lists)
+
+
+Description:
+Write a function multiply_list(numbers, factor) that takes a list of numbers and a factor, and returns a new list where each number is multiplied by the factor.
+
+Example:
+
+Input:
+multiply_list([1, 2, 3], 5)
+
+Output:
+[5, 10, 15]
+
+
+Hint: Use a for loop inside the function.
+
+Problem 6: Find the Maximum (Functions + Loops + Lists)
+
+
+Description:
+Write a function find_max(numbers) that returns the largest number in a list without using the built-in max() function.
+
+Example:
+
+Input:
+find_max([3, 11, 7, 2, 9])
+
+Output:
+11
+
+
+Hint: Start with the first item as the "current max" and loop through the list to compare.
+
+Problem 7: Palindrome Checker (Strings + Functions + Conditionals)
+
+Description:
+Write a function is_palindrome(word) that checks whether a word is a palindrome (it reads the same backward as forward).
+
+Example:
+
+Input:
+is_palindrome("racecar")
+
+Output:
+True
+
+Input:
+is_palindrome("python")
+
+Output:
+False
 
 Example:
 Problem: Write a function called 'is_even' that takes an integer and returns 
