@@ -216,7 +216,17 @@ print(f"is_even(7): {is_even(7)}")  # Should print False
 """
 
 print("Testing Problem 1:")
-# Add your tests here
+num1 = 10
+num2 = 20
+resultAdd = num1 + num2
+resultSubtract = num1 - num2
+resultMultiply = num1 * num2
+resultDivide = num1 / num2
+print("sum: " + resultAdd)
+print("quotient: " + resultDivide)
+print("product: " + resultMultiply)
+print("difference: " + resultSubtract)
+
 
 print("\nTesting Problem 2:")
 # Add your tests here
