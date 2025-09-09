@@ -64,7 +64,15 @@ def every_other(lst: List[T]) -> List[T]:
     Returns:
         a list of every of other item in the original list starting with the first
     """
+    #Python method
+    return lst[::2]
 
+    # Java mathod
+    # result = []
+    # for i in range(len(lst)):
+    #     if i % 2 == 0:
+    #         result.append(lst[i])
+    # return result
 
 def sum_list(lst: List[int]) -> int:
     """Takes a list of numbers, and returns the sum of the numbers in that list. Cannot
