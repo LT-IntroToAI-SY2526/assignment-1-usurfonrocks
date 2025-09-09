@@ -229,15 +229,58 @@ print("difference: " + resultSubtract)
 
 
 print("\nTesting Problem 2:")
-# Add your tests here
+
+score = int(input("Enter your score: "))
+
+
+if score >= 90 and score <= 100:
+    print("You got an A.")
+elif score >= 80:
+    print("You got a B.")
+elif score >= 70:
+    print("You got a C.")
+elif score >= 60:
+    print("You got a D.")
+elif score >= 0:
+    print("You got an F.")
+else:
+    print("Invalid score")
+
 
 print("\nTesting Problem 3:")
-# Add your tests here
+correct_password = "python123"
+attempt = 1
+max_attempts = 3
+
+while attempt <= max_attempts:
+    user_input = input("Attempt " + str(attempt) + ": ")
+
+    if user_input == correct_password:
+        print("Access granted.")
+        break
+    else:
+        attempt += 1
+
+if attempt > max_attempts:
+    print("Access denied.")
+
 
 print("\nTesting Problem 4:")
-# Add your tests here
+def multiply_list(numbers, factor):
+    result = []
+    for num in numbers:
+        result.append(num * factor)
+    return result
 
 print("\nTesting Problem 5:")
-# Add your tests here
+def find_max(numbers):
+    current_max = numbers[0]
+
+    for num in numbers[1:]:
+        if num > current_max:
+            current_max = num
+
+    return current_max
+
 
 
