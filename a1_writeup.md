@@ -16,7 +16,7 @@ Mr. Berg will look at all your files to determine what you have completed.  If t
 
 After completing your problems, reflect on:
 
-1. **What was your initial experience with Python?** How did it compare to other programming languages you've used?
+1. **What was your initial experience with Python?** Python seemed much simpler than other programming languages because I feel as though there aren't as 
 
 2. **How did you use AI effectively?** Give specific examples of good prompts you used and what you learned from the responses.
 
