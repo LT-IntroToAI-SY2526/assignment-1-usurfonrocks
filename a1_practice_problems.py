@@ -140,7 +140,22 @@ def duck_duck_goose(lst: List[str]) -> List[str]:
     Returns:
         the resulting list after playing duck duck goose
     """
-
+    position = 0
+    current = "duck1"
+    while len(lst) > 2:
+        if current == "duck1":
+            current = "duck2"
+            position += 1
+        elif current == "duck2":
+            current = "goose"
+            position += 1
+        else: # current == "goose"
+            current = "duck1"
+            lst.pop(position)
+        if position == len(lst):
+            position = 0
+            
+    return lst
 
 # this line causes the nested code to be skipped if the file is imported instead of run
 if __name__ == "__main__":
@@ -158,6 +173,8 @@ if __name__ == "__main__":
 
 
     names = ["roscoe", "kim", "woz", "solin", "law", "remess"]
-    assert duck_duck_goose(names) == ["roscoe", "law"]
+    assert duck_duck_goose(names) == ["roscoe", "law"], "failed duck duck goose 1"
+    names = ["miguel", "emma", "franco", "lukas", "maks"]
+    assert duck_duck_goose(names) == ["emma", "lukas"], "failed duck duck goose 2"
 
     print("All tests passed!")
